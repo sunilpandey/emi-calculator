@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <mat-radio-group style="display: flex; flex-direction: column; align-items: center;" [(ngModel)]="selectedComp">
+    <div class="form-container"><div><mat-radio-button value="loanAmountEnabled"></mat-radio-button><label for="Loan">Loan Amount: </label></div> <input type="text" matInput placeholder="Loan amount" [(ngModel)]="loanAmount" (ngModelChange)="parameterChanged()"  [readonly]="selectedComp == 'loanAmountEnabled'" /></div>
+    <div class="form-container"><div><mat-radio-button value="durationEnabled"></mat-radio-button><label for="Loan">Duration: </label></div> <input type="text" matInput  placeholder="Duration" [(ngModel)]="duration" (ngModelChange)="parameterChanged()" [readonly]="selectedComp == 'durationEnabled'" /></div>
+    <div class="form-container"><div><mat-radio-button value="roiEnabled"></mat-radio-button><label for="Loan">Rate of interest: </label></div><input type="text" matInput  placeholder="Rate of interest" [(ngModel)]="roi" (ngModelChange)="parameterChanged()" [readonly]="selectedComp == 'roiEnabled'" /></div>
+    <div class="form-container"><div><mat-radio-button value="emiEnabled"></mat-radio-button><label for="Loan">EMI: </label></div><input type="text" matInput placeholder="EMI" [(ngModel)]="emi" [readonly]="selectedComp =='emiEnabled'" (ngModelChange)="parameterChanged()"/></div>
+  </mat-radio-group>
+</div>
