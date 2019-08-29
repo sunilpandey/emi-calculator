@@ -7,6 +7,7 @@ import {MatInputModule} from "@angular/material/input"
 import {MatRadioModule} from "@angular/material/radio"
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
